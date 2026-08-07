@@ -10,9 +10,11 @@ test.describe('FR-06: Product Detail View - Positive Cases', () => {
 
     // Assertion Pattern 1: Visibility/text assertion
     // Dùng selector dựa trên source code thật của EShop (img, h1, text-red-600)
+    await expect(page.locator('img.w-full.h-auto.rounded')).toBeVisible(); // Hình ảnh sản phẩm
     await expect(page.locator('h1.text-3xl.font-bold')).toBeVisible();
     await expect(page.locator('p.text-red-600')).toBeVisible(); // Giá tiền
     await expect(page.locator('p.text-gray-700')).toBeVisible(); // Mô tả
+    await expect(page.locator('button.bg-green-600')).toBeVisible(); // Nút Thêm vào giỏ hàng
   });
 
   // Case 2 & 3: Nhập quantity hợp lệ (1 và 5) rồi thêm giỏ (Data-driven)
@@ -30,6 +32,7 @@ test.describe('FR-06: Product Detail View - Positive Cases', () => {
       await quantityInput.fill(quantity.toString());
 
       // Click thêm vào giỏ hàng
+      await addToCartBtn.click();
       await addToCartBtn.click();
 
       // Assertion Pattern 2: State assertion
