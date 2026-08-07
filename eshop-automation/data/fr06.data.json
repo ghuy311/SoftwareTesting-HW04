@@ -1,0 +1,5 @@
+{
+  "validQuantities": [1, 5, 2147483647],
+  "invalidQuantities": [0, -3, 1.5, "abc", ""],
+  "productIds": { "valid": 1, "validSecond": 2, "notFound": 999999 }
+}
