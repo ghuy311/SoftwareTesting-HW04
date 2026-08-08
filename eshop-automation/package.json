@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:ui": "playwright test --ui",
+    "test:report": "playwright show-report",
+    "test:ui:debug": "playwright test --ui --debug"
   },
   "keywords": [],
   "author": "",
