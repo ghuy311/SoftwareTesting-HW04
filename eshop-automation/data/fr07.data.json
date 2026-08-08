@@ -1,0 +1,25 @@
+{
+  "positiveCases": {
+    "add_single": {
+      "productId": 1,
+      "productName": "iPhone 15 Pro Max",
+      "price": 100000,
+      "quantity": 1,
+      "expectedTotal": "100.000 ₫"
+    },
+    "add_multiple_same": {
+      "productId": 1,
+      "productName": "iPhone 15 Pro Max",
+      "price": 100000,
+      "quantity": 2,
+      "expectedTotal": "200.000 ₫"
+    }
+  },
+  "emptyCart": {
+    "expectedMessage": "Giỏ hàng của bạn đang trống"
+  },
+  "negativeCases": {
+    "invalidQuantities": [0, -1, "abc", ""],
+    "expectedFallbackValue": "1"
+  }
+}
