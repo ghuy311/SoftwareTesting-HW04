@@ -6,14 +6,11 @@ module.exports = defineConfig({
   forbidOnly: !!process.env.CI,
   retries: process.env.CI ? 2 : 0,
   workers: process.env.CI ? 1 : undefined,
-  reporter: [['html', { outputFolder: 'reports' }]],
-  // Prompt 4: Thêm metadata hiển thị MSSV trong HTML Report
-  metadata: {
-    'Run by': '23127376',
-  },
+  reporter: [
+    ['html', { outputFolder: 'reports', title: `Run by: 23127376 | Time: ${new Date().toISOString()}` }]
+  ],
   use: {
-    trace: 'on-first-retry',
-    // URL của Frontend App
+    trace: 'on',
     baseURL: 'http://localhost:5173',
   },
   projects: [
