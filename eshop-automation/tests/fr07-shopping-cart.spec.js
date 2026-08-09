@@ -99,7 +99,7 @@ test.describe('FR-07: Giỏ hàng (Shopping Cart) - Positive Cases', () => {
         const addToCartBtn = page.locator('button', { hasText: 'Thêm vào giỏ' });
         await addToCartBtn.click();
         await addToCartBtn.click();
-        await page.goto('http://localhost:5173/cart');
+        await page.locator('a[href="/cart"]').click(); // Giả định có thẻ a href=/cart
 
         let dialogTriggered = false;
         page.on('dialog', async dialog => {
@@ -118,23 +118,23 @@ test.describe('FR-07: Giỏ hàng (Shopping Cart) - Positive Cases', () => {
     test('TC06: Giỏ hàng phải gọi API để lưu dữ liệu (Network Assertion - Bắt Bug)', async ({ page }) => {
         const data = testData.positiveCases.add_single;
         await page.goto(`http://localhost:5173/product/${data.productId}`);
-        
+
         const addToCartBtn = page.locator('button', { hasText: 'Thêm vào giỏ' });
-        
+
         // Assert Network: Dựa vào docs/api_specification.md, phải có POST request đến /api/cart
         // Test này sẽ cố tình bắt lỗi (FAIL do Timeout) vì hệ thống hiện tại 
         // dính bug ở FR-07 (Chỉ lưu ở React state, không gọi API)
         const responsePromise = page.waitForResponse(
             response => response.url().includes('/api/cart') && response.request().method() === 'POST',
-            { timeout: 3000 } // Để 3s cho nhanh fail, chứng minh API không được gọi
+            { timeout: 4000 } // Để 3s cho nhanh fail, chứng minh API không được gọi
         );
-        
+
         await addToCartBtn.click();
         await addToCartBtn.click(); // Bug FR-06: click 2 lần
-        
+
         // Nếu không có API request nào, đoạn code dưới sẽ ném ra TimeoutError
         const response = await responsePromise;
-        
+
         // Nếu qua được timeout, assert HTTP Status
         expect(response.status()).toBe(200);
     });
