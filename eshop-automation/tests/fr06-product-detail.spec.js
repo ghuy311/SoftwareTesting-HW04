@@ -14,6 +14,7 @@ test.describe('FR-06: Product Detail View - Positive Cases', () => {
     await expect(page.locator('h1.text-3xl.font-bold')).toBeVisible();
     await expect(page.locator('p.text-red-600')).toBeVisible(); // Giá tiền
     await expect(page.locator('p.text-gray-700')).toBeVisible(); // Mô tả
+    await expect(page.locator('span.text-sm')).toBeVisible(); // Danh mục
     await expect(page.locator('button.bg-green-600')).toBeVisible(); // Nút Thêm vào giỏ hàng
   });
 
@@ -63,19 +64,19 @@ test.describe('FR-06: Product Detail View - Positive Cases', () => {
         console.log(`Bị chặn nhập liệu: ${error.message}`);
         return; // Thoát test case thành công
       }
-      
+
       await addToCartBtn.click();
-      
+
       // Assertion Pattern 1 (mở rộng): Kiểm tra xem có hiển thị lỗi hay bị chặn lại không
       const errorMessage = page.locator('.error-message'); // Placeholder selector cho text lỗi UI
-      
+
       // Lấy câu thông báo lỗi mặc định của HTML5 (nếu form dùng thuộc tính min="1" hoặc required)
       const validationMessage = await quantityInput.evaluate((el) => el.validationMessage);
-      
+
       // Kỳ vọng: Hoặc có thông báo lỗi UI hiển thị, hoặc bị chặn bởi HTML5 validation
       const hasUIError = await errorMessage.isVisible();
       const hasHTML5Error = validationMessage !== '';
-      
+
       expect(hasUIError || hasHTML5Error, `Dự kiến có lỗi cho input "${quantity}" nhưng không thấy báo lỗi`).toBeTruthy();
     });
   }
