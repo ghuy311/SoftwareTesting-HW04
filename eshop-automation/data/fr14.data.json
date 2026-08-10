@@ -1,0 +1,53 @@
+{
+  "adminAccount": {
+    "email": "admin@domain.com",
+    "password": "AdminPassword123!"
+  },
+  "userAccount": {
+    "email": "user@domain.com",
+    "password": "UserPassword123!"
+  },
+  "validCategories": {
+    "standard": {
+      "name": "Thiết Bị Công Nghệ"
+    },
+    "singleChar": {
+      "name": "A"
+    },
+    "specialChars": {
+      "name": "Laptop & Linh Kiện #2026"
+    },
+    "longName": {
+      "name": "Danh Mục Hàng Hóa Điện Máy Điện Lạnh Cao Cấp Và Thiết Bị Gia Dụng Thông Minh Trong Nhà Tự Động Hóa"
+    }
+  },
+  "invalidCategories": {
+    "empty": {
+      "name": "",
+      "expectedMessage": "Tên danh mục là bắt buộc"
+    },
+    "whitespace": {
+      "name": "   ",
+      "expectedMessage": "Tên danh mục không được để trống"
+    }
+  },
+  "categoryToDelete": {
+    "name": "Danh Mục Cần Xóa Test"
+  },
+  "categoryWithProducts": {
+    "id": 1,
+    "name": "Điện thoại",
+    "expectedErrorMessage": "Lỗi xóa DM: Không thể xóa danh mục đang có sản phẩm"
+  },
+  "uiLabels": {
+    "pageTitle": "Quản lý Danh mục",
+    "inputPlaceholder": "Tên danh mục mới",
+    "addButtonText": "Thêm mới",
+    "deleteButtonText": "Xóa",
+    "accessDeniedMessage": "Bạn không phải là admin!"
+  },
+  "apiEndpoints": {
+    "categories": "/api/categories",
+    "login": "/api/login"
+  }
+}
