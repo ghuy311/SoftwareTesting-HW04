@@ -29,8 +29,10 @@ Qua quá trình thực thi 108 test runs của bộ kịch bản tự động h�
 - **Kết quả kỳ vọng (Expected Result):** Nhấp 1 lần duy nhất phải phát ngay request API POST `/api/cart`.
 - **Bằng chứng kiểm thử tự động:** `TC04` trong file `fr06-product-detail.spec.js` bị timeout ở `page.waitForResponse`.
 - **Ảnh minh chứng lỗi (Screenshot Evidence):**
-  ![BUG-01 Minh chứng lỗi nhấp 2 lần](screenshots/bug1_fr06_double_click.png)
-- **Link GitHub Issue:** *(Tham chiếu GitHub Issues repo của sinh viên)*
+
+![BUG-01 Minh chứng lỗi nhấp 2 lần](./screenshots/bug1_fr06_double_click.png)
+
+- **Link GitHub Issue:** https://github.com/ghuy311/SoftwareTesting-HW04/issues/1
 
 ---
 
@@ -49,8 +51,10 @@ Qua quá trình thực thi 108 test runs của bộ kịch bản tự động h�
 - **Kết quả kỳ vọng (Expected Result):** Giỏ hàng phải được đồng bộ và lưu trữ trong CSDL Backend hoặc SessionStorage.
 - **Bằng chứng kiểm thử tự động:** `TC06` & `TC12` trong file `fr07-shopping-cart.spec.js` bị fail.
 - **Ảnh minh chứng lỗi (Screenshot Evidence):**
-  ![BUG-02 Minh chứng mất giỏ hàng khi F5](screenshots/bug2_fr07_cart_f5_empty.png)
-- **Link GitHub Issue:** *(Tham chiếu GitHub Issues repo của sinh viên)*
+
+![BUG-02 Minh chứng mất giỏ hàng khi F5](./screenshots/bug2_fr07_cart_f5_empty.png)
+
+- **Link GitHub Issue:** https://github.com/ghuy311/SoftwareTesting-HW04/issues/2
 
 ---
 
@@ -68,8 +72,10 @@ Qua quá trình thực thi 108 test runs của bộ kịch bản tự động h�
 - **Kết quả kỳ vọng (Expected Result):** Bảng chỉ hiển thị 1 dòng duy nhất cho sản phẩm ID = 1 với `Quantity = 2`.
 - **Bằng chứng kiểm thử tự động:** `TC02` trong file `fr07-shopping-cart.spec.js` bị fail.
 - **Ảnh minh chứng lỗi (Screenshot Evidence):**
-  ![BUG-03 Minh chứng sản phẩm trùng lặp](screenshots/bug3_fr07_duplicate_rows.png)
-- **Link GitHub Issue:** *(Tham chiếu GitHub Issues repo of student)*
+
+![BUG-03 Minh chứng sản phẩm trùng lặp](./screenshots/bug3_fr07_duplicate_rows.png)
+
+- **Link GitHub Issue:** https://github.com/ghuy311/SoftwareTesting-HW04/issues/3
 
 ---
 
@@ -87,8 +93,10 @@ Qua quá trình thực thi 108 test runs của bộ kịch bản tự động h�
 - **Kết quả kỳ vọng (Expected Result):** API bắt buộc phải trả về status `401 Unauthorized` hoặc `403 Forbidden`.
 - **Bằng chứng kiểm thử tự động:** `TC09` trong file `fr14-category-management.spec.js` assert HTTP Status 401/403 bị fail.
 - **Ảnh minh chứng lỗi (Screenshot Evidence):**
-  ![BUG-04 Minh chứng lỗ hổng phân quyền RBAC](screenshots/bug4_fr14_rbac_security.png)
-- **Link GitHub Issue:** *(Tham chiếu GitHub Issues repo của sinh viên)*
+
+![BUG-04 Minh chứng lỗ hổng phân quyền RBAC](./screenshots/bug4_fr14_rbac_security.png)
+
+- **Link GitHub Issue:** https://github.com/ghuy311/SoftwareTesting-HW04/issues/4
 
 ---
 
@@ -106,5 +114,7 @@ Qua quá trình thực thi 108 test runs của bộ kịch bản tự động h�
 - **Kết quả kỳ vọng (Expected Result):** Form phải hiển thị thông báo lỗi hoặc chặn không cho gửi form.
 - **Bằng chứng kiểm thử tự động:** `TC05` & `TC06` trong file `fr14-category-management.spec.js` bị fail.
 - **Ảnh minh chứng lỗi (Screenshot Evidence):**
-  ![BUG-05 Minh chứng danh mục rỗng](screenshots/bug5_fr14_empty_category.png)
-- **Link GitHub Issue:** *(Tham chiếu GitHub Issues repo của sinh viên)*
+
+![BUG-05 Minh chứng danh mục rỗng](./screenshots/bug5_fr14_empty_category.png)
+
+- **Link GitHub Issue:** https://github.com/ghuy311/SoftwareTesting-HW04/issues/5

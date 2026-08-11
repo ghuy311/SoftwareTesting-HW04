@@ -1,0 +1,390 @@
+﻿commit 8ff58b3aea45952eff19c3a9f98b878f97abda25
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Tue Aug 11 11:55:17 2026 +0700
+
+    docs(bug-report): add detailed SUT bug report with screenshot evidence
+
+ ai-critique.md                                   |   8 +-
+ reports/bug_report.md                            | 110 +++++++++++++++++++++++
+ reports/screenshots/bug1_fr06_double_click.png   | Bin 0 -> 19624 bytes
+ reports/screenshots/bug2_fr07_cart_f5_empty.png  | Bin 0 -> 15780 bytes
+ reports/screenshots/bug3_fr07_duplicate_rows.png | Bin 0 -> 15780 bytes
+ reports/screenshots/bug4_fr14_rbac_security.png  | Bin 0 -> 8772 bytes
+ reports/screenshots/bug5_fr14_empty_category.png | Bin 0 -> 35793 bytes
+ 7 files changed, 114 insertions(+), 4 deletions(-)
+
+commit b91779e4d811f632f4aaee8784d26cb064f111fa
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Tue Aug 11 11:46:12 2026 +0700
+
+    test(report): update multi-browser Playwright HTML test report output
+
+ .../011a1de9ca4fb5cdb21c1a1d6dbab10dc43469c3.md    | 210 ++++++++++++
+ .../079df33e4015c283037742dcdd28a2352372d8ed.md    | 353 ++++++++++++++++++++
+ .../0a9e7929ac2f4cc56e159fb5c94cb494b73af911.md    | 193 +++++++++++
+ .../11bc2cf25f7a7ed8df246c85aec5948925236670.md    | 190 +++++++++++
+ .../1337fcf082b3a4b82a8afe43670e6ce949f0f71a.md    | 155 +++++++++
+ .../1712fcc48112248686371eb858395474bced8ec8.md    | 329 +++++++++++++++++++
+ .../1ab3cd0fe30177028ace61a042a9570a2bce268e.md    | 214 ++++++++++++
+ .../23fcbeaf9aae9a0377e562c284d54edffc2d49dc.md    | 247 ++++++++++++++
+ .../2637ac76079d882362f4b03b10b15d66b5362cc7.md    | 362 +++++++++++++++++++++
+ .../379279cce550680001c2f9bf6cddea5731ed4e15.md    | 355 ++++++++++++++++++++
+ .../3e0653628525119c485b41f46effc52b067bb2ab.md    | 215 ++++++++++++
+ .../435e4c2f98f409f533cacf487a0ecfb34c9e847c.md    | 195 +++++++++++
+ .../4b9b8bed9fe2beb73a8e99eccca71a0c505201d5.md    | 324 ++++++++++++++++++
+ .../58b2e1fd5dccd1c0c13666dce8a573b5f427a34a.md    | 214 ++++++++++++
+ .../6134285b4417d8889483457e45f17ef34578da45.md    | 331 +++++++++++++++++++
+ .../640eb928a95ebb3ce5f5603db937f7feda32e194.md    | 244 ++++++++++++++
+ .../696b9121f46aeec749cf1f1245569edfe2520833.md    | 154 +++++++++
+ .../6e879a8fc1eaaad8067d7806422272610adc0d2f.md    | 210 ++++++++++++
+ .../741ea4564ed2abdf57a38dbb05485d8fad196f89.md    | 362 +++++++++++++++++++++
+ .../744fb1e79a2da46d10933484fcefb5ae788a4c72.md    | 244 ++++++++++++++
+ .../771cbcdca1ee9a6441cf163f28e0d1cd902e8762.md    | 276 ++++++++++++++++
+ .../7d66a7add3f4c3b05c140210031d661a9535e665.md    | 214 ++++++++++++
+ .../95dfacc2a518fc865239b0a9a062d8227b10c3d9.md    | 214 ++++++++++++
+ .../97afecbdd5bb9af5ce7aebae6e89e647ccee9d37.md    | 307 +++++++++++++++++
+ .../a46376c170c83aebd941d2ed2bf226bf256d0b0e.md    | 171 ++++++++++
+ .../a57b722abe1c9be077b7512292fcf8c8dadfbf65.md    | 277 ++++++++++++++++
+ .../b48a54999081a8fe1870a15224e939d2e634b964.md    | 214 ++++++++++++
+ .../c0a2e946ae571373ceda434927ad93e5e5f07183.md    | 214 ++++++++++++
+ .../e47071ed583aece01c5c0ecdd5db61cc7fa92b0b.md    | 184 +++++++++++
+ .../e8d3b75766f3421a59951f6c0e66fa42091cd22a.md    | 214 ++++++++++++
+ .../f62a8fbe831db76472db9774eb347643dcffe467.md    | 315 ++++++++++++++++++
+ .../fbf7375f3019fe0b2cf86e6c89cc4c3c714720fa.md    | 214 ++++++++++++
+ eshop-automation/reports/index.html                |   2 +-
+ 33 files changed, 7916 insertions(+), 1 deletion(-)
+
+commit 0c89b90cbdaa97de6f6e3f4e41ad07d72b056414
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Tue Aug 11 11:46:03 2026 +0700
+
+    docs(readme): add self-assessment table and test summary to README.MD
+
+ README.MD | 86 +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 86 insertions(+)
+
+commit 5ac60e37ccfb76c2499fd35c13459dcb9f8137aa
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Tue Aug 11 11:45:56 2026 +0700
+
+    docs(report): complete main report documentation for HW04 submission
+
+ reports/main_report.md | 150 +++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 150 insertions(+)
+
+commit 8f0677ff7f4772b5f3c50a2909799bdf8f244a8a
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Tue Aug 11 11:45:46 2026 +0700
+
+    docs(critique): add AI Critique evaluation in student voice for HW04
+
+ ai-critique.md | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+
+commit b1e457f5acfd4b75b5fcd96e531692880d4d7d09
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Tue Aug 11 11:45:39 2026 +0700
+
+    docs(audit): update AI Audit Report with 16 artifacts and verdicts
+
+ ai-audit-report.md | 14 +++++++++++---
+ 1 file changed, 11 insertions(+), 3 deletions(-)
+
+commit 5a69966e65fa1bea54e2ac1749034e306034d90f
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Tue Aug 11 11:45:32 2026 +0700
+
+    feat(data): update FR-14 test data JSON with admin URL port 5174
+
+ eshop-automation/data/fr14.data.json | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+commit d5ce45b2b20e116dfecdcc3a44b81bf7b9baf89e
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Tue Aug 11 11:45:22 2026 +0700
+
+    feat(fr14): complete FR-14 category management test suite with 12 test cases
+
+ .../tests/fr14-category-management.spec.js         | 298 +++++++++++++++++++++
+ 1 file changed, 298 insertions(+)
+
+commit 530b3d588949934bf35370b2669bbb88ba81c77f
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Mon Aug 10 23:29:40 2026 +0700
+
+    feat(fr14): add fr14 test data file and update AI audit report
+
+ ai-audit-report.md                   | 19 +++++++------
+ eshop-automation/data/fr14.data.json | 53 ++++++++++++++++++++++++++++++++++++
+ 2 files changed, 63 insertions(+), 9 deletions(-)
+
+commit d342ba7d67c572d9635529d5619cb51d1c64414e
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Mon Aug 10 23:25:31 2026 +0700
+
+    feat(fr07): update data-driven test suite with 12 test cases for FR-07 shopping cart
+
+ eshop-automation/data/fr07.data.json               |  46 +++-
+ .../03fb020009d2a3335b816bda817253241dcc59ac.md    | 199 ++++++++++++++
+ .../0528cb9d780f9fd51354b5d36eef11186100192b.md    | 214 ---------------
+ .../09d53dd4a52b9351a0960c5b6db289a239c6e9fe.md    | 214 ---------------
+ .../108118e4527ffa00a8333f3b959ce193e52c0275.md    | 214 ---------------
+ .../150fbfee189304382d83aa814b40afc60fe84545.md    |  53 ----
+ .../241182dc3df51a61fa8bf80030c7a93a124cadec.md    | 214 ---------------
+ .../2faeb0110adb4fdfff8f27c66ea504d9701db605.md    | 244 +++++++++++++++++
+ .../338ca12a1f8e0398d665b5f6e5d406651d158cb3.md    | 214 ---------------
+ .../3efe01f1bd3fa55b3e81c588fcdc8ff6dd8b063f.md    | 214 ---------------
+ .../5c6a4a4a56accde677e500506570d6b748aee8de.md    | 177 ------------
+ .../5f55052c5dbdc7f1985e0c74185517e2f87b0ce5.md    | 210 ---------------
+ .../75e282f392e49d185545688f04a1a0587297b354.md    | 171 ------------
+ .../89f67ae0caeeba8f7ede8c93f26904b7c3a9a89d.md    | 210 ---------------
+ .../8cdcea6cede59ed81034da24334755bd76d1b439.md    | 166 ------------
+ .../b9b10a7ed64ab3a2b13ce16d685ff3ef843f23a8.md    | 241 +++++++++++++++++
+ .../baaa112668361fecbd3b6eda890ada3bee8e8887.md    | 217 ---------------
+ .../c2840a065de34a27a2bca87e74ea4c19459ebe16.md    | 193 --------------
+ .../c677e7f0e3d44e99b719b1dde386767261d7b43a.md    | 166 ------------
+ .../c6ba7083920dc5d562e4c06920a992a39ef16b11.md    | 193 ++++++++++++++
+ .../cdc5cfb8216a3e8fd4a93b6d14756b9ba7694692.md    | 214 ---------------
+ .../ce552be84c46dd44a03fbe18b13fffd99da0ef2f.md    | 202 --------------
+ .../d21d240231ee217d83504bbab436a4fead084a8d.md    | 214 ---------------
+ .../d2f05111ea0607abeb8472b5d67f3265d07e260d.md    | 190 -------------
+ .../d8bbb268ca8738ad0a0d96057d099726419465c1.md    | 171 ------------
+ .../daf380c1c1611909947b34b73e1bd627ddb5e9d9.md    | 195 ++++++++++++++
+ .../e1f4cac57b6a907f041bfbca90e126c34bac5a75.md    | 138 ----------
+ .../e61cf63d84318065a43389b3771a9a3c5d3e5d16.md    | 193 --------------
+ .../e91fb8a5439536a89265274e0efd6b6025c68c04.md    | 184 +++++++++++++
+ .../fd52819d7a0cd88d96dff0bcec021055163f37c7.md    | 177 ------------
+ .../fdc58eac06d8f46a279a68371e2a5a2bdc2a7131.md    | 244 +++++++++++++++++
+ eshop-automation/reports/index.html                |   2 +-
+ eshop-automation/tests/fr07-shopping-cart.spec.js  | 296 +++++++++++++--------
+ implementation_plan.md                             |  62 +++++
+ 34 files changed, 1792 insertions(+), 4460 deletions(-)
+
+commit c3c9c80fb0474d2c8e809ebf3725a800abbf81ed
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Sun Aug 9 22:58:05 2026 +0700
+
+    Update FR-07 test cases and Playwright test reports
+
+ .../0528cb9d780f9fd51354b5d36eef11186100192b.md    | 214 +++++++++++++++++++++
+ .../09d53dd4a52b9351a0960c5b6db289a239c6e9fe.md    | 214 +++++++++++++++++++++
+ .../108118e4527ffa00a8333f3b959ce193e52c0275.md    | 214 +++++++++++++++++++++
+ .../150fbfee189304382d83aa814b40afc60fe84545.md    |  53 +++++
+ .../241182dc3df51a61fa8bf80030c7a93a124cadec.md    | 214 +++++++++++++++++++++
+ .../338ca12a1f8e0398d665b5f6e5d406651d158cb3.md    | 214 +++++++++++++++++++++
+ .../3efe01f1bd3fa55b3e81c588fcdc8ff6dd8b063f.md    | 214 +++++++++++++++++++++
+ .../5c6a4a4a56accde677e500506570d6b748aee8de.md    | 177 +++++++++++++++++
+ .../5f55052c5dbdc7f1985e0c74185517e2f87b0ce5.md    | 210 ++++++++++++++++++++
+ .../75e282f392e49d185545688f04a1a0587297b354.md    | 171 ++++++++++++++++
+ .../89f67ae0caeeba8f7ede8c93f26904b7c3a9a89d.md    | 210 ++++++++++++++++++++
+ .../8cdcea6cede59ed81034da24334755bd76d1b439.md    | 166 ++++++++++++++++
+ ...=> baaa112668361fecbd3b6eda890ada3bee8e8887.md} |  30 ++-
+ .../c2840a065de34a27a2bca87e74ea4c19459ebe16.md    | 193 +++++++++++++++++++
+ .../c677e7f0e3d44e99b719b1dde386767261d7b43a.md    | 166 ++++++++++++++++
+ .../cdc5cfb8216a3e8fd4a93b6d14756b9ba7694692.md    | 214 +++++++++++++++++++++
+ .../ce552be84c46dd44a03fbe18b13fffd99da0ef2f.md    | 202 +++++++++++++++++++
+ .../d21d240231ee217d83504bbab436a4fead084a8d.md    | 214 +++++++++++++++++++++
+ .../d2f05111ea0607abeb8472b5d67f3265d07e260d.md    | 190 ++++++++++++++++++
+ .../d8bbb268ca8738ad0a0d96057d099726419465c1.md    | 171 ++++++++++++++++
+ .../e1f4cac57b6a907f041bfbca90e126c34bac5a75.md    | 138 +++++++++++++
+ .../e61cf63d84318065a43389b3771a9a3c5d3e5d16.md    | 193 +++++++++++++++++++
+ .../fd52819d7a0cd88d96dff0bcec021055163f37c7.md    | 177 +++++++++++++++++
+ eshop-automation/reports/index.html                |   2 +-
+ eshop-automation/tests/fr07-shopping-cart.spec.js  |  14 +-
+ 25 files changed, 4164 insertions(+), 11 deletions(-)
+
+commit fc79b756d463bf2bc863be909709dd68953a9535
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Sun Aug 9 22:58:04 2026 +0700
+
+    Update FR-06 test cases to ensure full coverage
+
+ eshop-automation/tests/fr06-product-detail.spec.js | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+commit c5db1bd24d249666f7ee345580f6c3adcd1537cb
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Sat Aug 8 23:53:57 2026 +0700
+
+    feat(test): Add FR-07 automation test scripts and update AI Audit Report
+
+ ai-audit-report.md                                 |   8 +-
+ eshop-automation/data/fr07.data.json               |  25 +++
+ .../0699419f365ebea3c74df0e4c29089ed4e9eb779.md    | 213 --------------------
+ .../3db2238a3d98af94f4ad4b5db5f00933c92c0741.md    | 209 --------------------
+ .../475c9d3b328490877d77a0a05f9f11bf464d6a47.md    | 213 --------------------
+ .../5d55e7d351410a57ebbc4c194e0b07f776c3d508.md    | 213 --------------------
+ .../72809ae3ea67465d2fc71bdb2c3cac42498dad7b.md    | 213 --------------------
+ .../7ebe4d0791a85df07afaf818cee8418b50c4fe61.md    | 193 ++++++++++++++++++
+ .../8189afd10f40f82ac16b77a4e916963364bf2e84.md    | 214 --------------------
+ .../8fe4d251fe64a40aeaf60bd4b70d2fa695a53409.md    | 190 ------------------
+ .../a01914eb48dcbefc183b662ccf6c088c3d17be56.md    | 213 --------------------
+ .../a4a48e8ed4847fbf483b3839d8d61ce0b2c091f9.md    | 209 --------------------
+ .../a7b4839fecea89aa9d77f6396dd38ad0ee3cbec4.md    | 169 ----------------
+ .../be93df17a61459c7aa4dc471a5a145a42c4e1ec3.md    | 213 --------------------
+ .../e8c631b920d7c65e5b56eb3bfb93d6ec0cb2e092.md    | 213 --------------------
+ .../ea2d71f185c7a3f0d1c1308d56d80a65970c022b.md    | 220 ---------------------
+ .../ef9da0d917fd74abe7942eb6aa5fedf6f371ed5f.md    | 213 --------------------
+ eshop-automation/reports/index.html                |   2 +-
+ eshop-automation/tests/fr07-shopping-cart.spec.js  | 141 +++++++++++++
+ 19 files changed, 364 insertions(+), 2920 deletions(-)
+
+commit 489aac514d24ff86687f666eb5dc33358462dc49
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Sat Aug 8 23:09:32 2026 +0700
+
+    Configure native anti-cheating title and clean up scripts
+
+ .gitignore                                         |   3 +-
+ eshop-automation/package-lock.json                 | 190 +++++++++++++++++-
+ eshop-automation/package.json                      |  13 +-
+ eshop-automation/playwright.config.js              |  11 +-
+ .../0699419f365ebea3c74df0e4c29089ed4e9eb779.md    | 213 ++++++++++++++++++++
+ .../3db2238a3d98af94f4ad4b5db5f00933c92c0741.md    | 209 ++++++++++++++++++++
+ .../475c9d3b328490877d77a0a05f9f11bf464d6a47.md    | 213 ++++++++++++++++++++
+ .../5d55e7d351410a57ebbc4c194e0b07f776c3d508.md    | 213 ++++++++++++++++++++
+ .../72809ae3ea67465d2fc71bdb2c3cac42498dad7b.md    | 213 ++++++++++++++++++++
+ .../8189afd10f40f82ac16b77a4e916963364bf2e84.md    | 214 ++++++++++++++++++++
+ .../8dae2c95c671c71226a3d8afb3057f816f29aa68.zip   | Bin 520260 -> 0 bytes
+ .../8fe4d251fe64a40aeaf60bd4b70d2fa695a53409.md    | 190 ++++++++++++++++++
+ .../a01914eb48dcbefc183b662ccf6c088c3d17be56.md    | 213 ++++++++++++++++++++
+ .../a4a48e8ed4847fbf483b3839d8d61ce0b2c091f9.md    | 209 ++++++++++++++++++++
+ .../a7b4839fecea89aa9d77f6396dd38ad0ee3cbec4.md    | 169 ++++++++++++++++
+ .../be93df17a61459c7aa4dc471a5a145a42c4e1ec3.md    | 213 ++++++++++++++++++++
+ .../e8c631b920d7c65e5b56eb3bfb93d6ec0cb2e092.md    | 213 ++++++++++++++++++++
+ .../ea2d71f185c7a3f0d1c1308d56d80a65970c022b.md    | 220 +++++++++++++++++++++
+ .../ef9da0d917fd74abe7942eb6aa5fedf6f371ed5f.md    | 213 ++++++++++++++++++++
+ eshop-automation/reports/index.html                |   2 +-
+ 20 files changed, 3120 insertions(+), 14 deletions(-)
+
+commit b04b96ba89b93d2df60efc11d3a86e5f2cd9db9d
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Sat Aug 8 21:31:47 2026 +0700
+
+    Update reports, AI testing skills, docs, and gitignore
+
+ .gitignore                                         |   6 +-
+ eshop-automation/docs/api_specification.md         | 214 +++++++++++++++
+ eshop-automation/docs/eshop-spec.md                | 288 +++++++++++++++++++++
+ eshop-automation/package.json                      |   7 +-
+ ...> 8dae2c95c671c71226a3d8afb3057f816f29aa68.zip} | Bin 537735 -> 520260 bytes
+ .../e8c631b920d7c65e5b56eb3bfb93d6ec0cb2e092.md    | 213 ---------------
+ eshop-automation/reports/index.html                |   2 +-
+ reports/main_report.md                             |   0
+ skills/SKILL.md                                    | 122 +++++++++
+ 9 files changed, 634 insertions(+), 218 deletions(-)
+
+commit 9fe5a2f08d9e6b73a01ce2300419b8160ae0d0be
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Fri Aug 7 21:54:48 2026 +0700
+
+    docs: add Playwright HTML report for FR-06 test suite execution
+
+ .../3b7e62f98d11826ccc85504df35b7039fd9eebee.zip   | Bin 0 -> 537735 bytes
+ .../e8c631b920d7c65e5b56eb3bfb93d6ec0cb2e092.md    | 213 +++++++++++++++++++++
+ eshop-automation/reports/index.html                |  49 +++++
+ .../trace/assets/codeMirrorModule-rXmQmLUY.js      |  32 ++++
+ .../trace/assets/defaultSettingsView-B-dXF5JN.js   | 181 +++++++++++++++++
+ .../reports/trace/assets/urlMatch-L3liM589.js      |   1 +
+ .../reports/trace/codeMirrorModule.-QdMvsKi.css    |   1 +
+ .../reports/trace/codicon.DCmgc-ay.ttf             | Bin 0 -> 80340 bytes
+ .../reports/trace/defaultSettingsView.BLFoOugd.css |   1 +
+ eshop-automation/reports/trace/index.B_TqY17P.css  |   1 +
+ eshop-automation/reports/trace/index.KZ4wOW1K.js   |   1 +
+ eshop-automation/reports/trace/index.html          |  44 +++++
+ .../reports/trace/manifest.webmanifest             |  16 ++
+ eshop-automation/reports/trace/playwright-logo.svg |   9 +
+ .../reports/trace/snapshot.B_Jk1wbt.js             |   1 +
+ eshop-automation/reports/trace/snapshot.html       |  10 +
+ eshop-automation/reports/trace/sw.bundle.js        |   4 +
+ eshop-automation/reports/trace/uiMode.C7UW1sC9.css |   1 +
+ eshop-automation/reports/trace/uiMode.Dzuouizj.js  |   5 +
+ eshop-automation/reports/trace/uiMode.html         |  18 ++
+ .../reports/trace/xtermModule.kHJ-D0s7.css         |   1 +
+ 21 files changed, 589 insertions(+)
+
+commit 862652a6df3f233a30561e03742356d48257a776
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Fri Aug 7 21:52:29 2026 +0700
+
+    test: handle Playwright type error for non-numeric input in TC05_09
+
+ eshop-automation/tests/fr06-product-detail.spec.js | 18 +++++++++++++-----
+ 1 file changed, 13 insertions(+), 5 deletions(-)
+
+commit 3525b3124bd0875c52aca73b71ba8739dc228b8a
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Fri Aug 7 21:52:04 2026 +0700
+
+    test: add second click to bypass FR-06 bug and refine image selector
+
+ eshop-automation/tests/fr06-product-detail.spec.js | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit aea9a9fe95b3d6e05c0b2c6aa43ed37fb79095e8
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Fri Aug 7 21:18:41 2026 +0700
+
+    docs: update AI Audit Report for Task 1 (FR-06)
+
+ ai-audit-report.md | 97 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 97 insertions(+)
+
+commit 920607997794f1aeb99d2e584027ce74ad7e8d91
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Fri Aug 7 21:11:35 2026 +0700
+
+    test: fix locators and URL route for FR-06 based on real SUT
+
+ eshop-automation/tests/fr06-product-detail.spec.js | 97 +++++++++++-----------
+ 1 file changed, 47 insertions(+), 50 deletions(-)
+
+commit 16667a6b313f1b0a0471a74290134a9b0f6e023a
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Fri Aug 7 20:38:32 2026 +0700
+
+    chore: track .gitignore and allow reports directory
+
+ .gitignore | 3 +++
+ 1 file changed, 3 insertions(+)
+
+commit ee7cf02578a01613880cbb87d51b8a7631ba0263
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Fri Aug 7 20:37:31 2026 +0700
+
+    test: implement FR-06 automation scripts
+
+ eshop-automation/tests/fr06-product-detail.spec.js | 150 +++++++++++++++++++++
+ 1 file changed, 150 insertions(+)
+
+commit dc5c8f7fa19a5e579ce5e99a5166707db509e566
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Fri Aug 7 20:37:31 2026 +0700
+
+    test: add data-driven JSON for FR-06
+
+ eshop-automation/data/fr06.data.json | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+commit e5e159ea70cc157da57ef782ac662a9f807d6a4b
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Fri Aug 7 20:37:31 2026 +0700
+
+    test: setup Playwright folder structure and configuration
+
+ eshop-automation/package-lock.json    | 79 +++++++++++++++++++++++++++++++++++
+ eshop-automation/package.json         | 16 +++++++
+ eshop-automation/playwright.config.js | 33 +++++++++++++++
+ 3 files changed, 128 insertions(+)
+
+commit ca234a9a9441f78c77ae4a677e6086ddf050173d
+Author: ghuy311 <hogiahy311@gmail.com>
+Date:   Fri Aug 7 20:37:31 2026 +0700
+
+    docs: init project documents and update gitignore
+
+ 2026.HW04.Automation Testing_En.md | 183 +++++++++++++++++++++++++++++++++++++
+ README.MD                          |   0
+ ai-audit-report.md                 |   0
+ ai-critique.md                     |   0
+ 4 files changed, 183 insertions(+)
