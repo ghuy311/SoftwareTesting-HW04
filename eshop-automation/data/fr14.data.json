@@ -1,11 +1,12 @@
 {
+  "adminUrl": "http://localhost:5174",
   "adminAccount": {
-    "email": "admin@domain.com",
-    "password": "AdminPassword123!"
+    "email": "admin@eshop.com",
+    "password": "Admin123!"
   },
   "userAccount": {
-    "email": "user@domain.com",
-    "password": "UserPassword123!"
+    "email": "test@eshop.com",
+    "password": "Test1234!"
   },
   "validCategories": {
     "standard": {
